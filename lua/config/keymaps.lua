@@ -27,3 +27,11 @@ vim.keymap.set("n", "<leader>bo", function()
   -- Open a fresh empty buffer
   vim.cmd("enew")
 end, { desc = "Close all buffers except Snacks" })
+
+vim.keymap.set("i", "<Tab>", function()
+  if require("minuet.virtualtext").action.is_visible() then
+    require("minuet.virtualtext").action.accept()
+  else
+    return "<Tab>"
+  end
+end, { expr = true, desc = "Minuet accept or Tab" })
