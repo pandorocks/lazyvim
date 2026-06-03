@@ -7,9 +7,9 @@ return {
         ruby_lsp = {
           mason = false, -- Don't install via Mason since you're using the gem
           cmd = {
-            "/home/leo/.local/share/mise/installs/ruby/4.0.2/bin/ruby",
+            "~/.local/share/mise/installs/ruby/4.0.5/bin/ruby",
             "-rbundler/setup",
-            "/home/leo/.local/share/mise/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/ruby-lsp-0.26.9/exe/ruby-lsp",
+            "~/.local/share/mise/installs/ruby/4.0.5/lib/ruby/gems/4.0.0/gems/ruby-lsp-0.26.9/exe/ruby-lsp",
           },
           settings = {
             rubyLsp = {
@@ -20,9 +20,9 @@ return {
         rubocop = {
           mason = false,
           cmd = {
-            "/home/leo/.local/share/mise/installs/ruby/4.0.2/bin/ruby",
+            "~/.local/share/mise/installs/ruby/4.0.5/bin/ruby",
             "-rbundler/setup",
-            "/home/leo/.local/share/mise/installs/ruby/4.0.2/lib/ruby/gems/4.0.0/gems/rubocop-1.84.2/exe/rubocop",
+            "~/.local/share/mise/installs/ruby/4.0.5/lib/ruby/gems/4.0.0/gems/rubocop-1.84.2/exe/rubocop",
             "--lsp",
           },
         },
